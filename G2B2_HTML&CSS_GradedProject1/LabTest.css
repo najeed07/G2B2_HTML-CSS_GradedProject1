@@ -1,0 +1,176 @@
+body {
+  margin: 0%;
+  background-color: rgba(250, 246, 246, 0.25);
+  display: flex;
+  height: 300px;
+}
+
+.block1 {
+  resize: both;
+}
+
+#frm {
+  padding-top: 7%;
+  width: 500px;
+  height: 700px;
+}
+
+div > #lab-form {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  bottom: 10%;
+  min-width: 1100px;
+  border: 1% solid rgb(239, 234, 234);
+  border-radius: 5px;
+
+  padding-left: 7%;
+
+  box-shadow: 5px 5px 10px 5px #858582;
+  overscroll-behavior-y: contain;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  div > #lab-form {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    bottom: 10%;
+    min-width: 600px;
+    border: 1% solid rgb(239, 234, 234);
+    border-radius: 5px;
+
+    padding-left: 1%;
+
+    box-shadow: 5px 5px 10px 5px #858582;
+    overscroll-behavior-y: contain;
+    overflow-y: scroll;
+  }
+}
+
+.in {
+  /* width: 310px; */
+  /* from */
+  width: 200px;
+  /* this */
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: rgb(12, 1, 1);
+  font-size: 14px;
+  /* margin-bottom: 16px; */
+  /* from */
+  margin-bottom: 4%;
+
+  /* this */
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+/* div{
+    overflow: hidden;
+} */
+input {
+  width: 100px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input:focus {
+  outline: none;
+  color: rgb(15, 14, 14);
+  background-color: rgba(217, 231, 243, 0.35);
+}
+button {
+  position: inherit;
+  border-radius: 4px;
+  color: rgb(248, 243, 243);
+  font-size: 18px;
+  height: 30px;
+  border: none;
+  background-color: rgb(175, 102, 243);
+}
+button:active {
+  background-color: rgb(191, 136, 242);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.image {
+  float: right;
+  overflow: hidden;
+  z-index: 1;
+  position: sticky;
+  /* left: 59%;
+    /* top: 0; */
+  bottom: 0%;
+  width: 500px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .image {
+    float: right;
+    overflow: hidden;
+    z-index: 1;
+    position: sticky;
+    /* left: 59%;
+        /* top: 0; */
+    bottom: 0%;
+    max-width: 200px;
+    /* width: 500px;
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden; */
+  }
+}
+.under {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 25%;
+  bottom: 7%;
+  left: 50%;
+  /* width: 300px; */
+  /* from */
+  /* width: 30%; */
+  /* this */
+}
+@media only screen and (max-width: 900px) {
+  .under {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    bottom: 7%;
+    left: 30%;
+    /* width: 300px; */
+    /* from */
+    /* width: 30%; */
+    /* this */
+  }
+}
+.under1 {
+  position: absolute;
+  display: grid;
+  bottom: 7%;
+  left: 42%;
+}

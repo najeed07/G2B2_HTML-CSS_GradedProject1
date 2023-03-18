@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: rgb(69, 68, 68);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  height: 60px;
+  margin: 2px;
+  margin-bottom: 0;
+}
+
+.menubar {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding-left: 40px;
+  margin: 2px;
+  height: 45px;
+}
+
+.menubar ul {
+  display: inline-flex;
+  list-style: none;
+  z-index: 99999;
+}
+
+.menubar ul li {
+  font-size: medium;
+  margin-top: 0;
+  z-index: 1000;
+  overflow: hidden;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: #fff;
+}
+
+.menubar ul li:hover {
+  background: black;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.submenu {
+  display: none;
+  width: 147px;
+  color: steelblue;
+}
+
+.menubar ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  background: whitesmoke;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+
+.submenu ul li a {
+  color: steelblue;
+}
+
+.submenu ul li a:hover {
+  color: orange;
+}
+
+/* .image {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  margin-left: -10%;
+  top: 100px;
+  left: 1px;
+  position: absolute;
+  transform: translate(10%, 2%);
+  overflow: hidden;
+  z-index: -1;
+  border-style: double;
+  border: 20px steelblue;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.slider img {
+  width: 100%;
+  padding: 15px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0%);
+  }
+
+  25% {
+    transform: translate(-100%);
+  }
+
+  50% {
+    transform: translate(-200%);
+  }
+
+  75% {
+    transform: translate(-300%);
+  }
+
+  100% {
+    transform: translate(-400%);
+  }
+} */
+
+#slider {
+  margin-top: 2px;
+  overflow: hidden;
+  border: 2px solid steelblue;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation-name: slider;
+  animation-duration: 40s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+  height: 600px;
+  background-size: auto;
+  border: 2px solid steelblue;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  55% {
+    left: -300%;
+  }
+  65% {
+    left: -300%;
+  }
+  75% {
+    left: -400%;
+  }
+  85% {
+    left: -400%;
+  }
+  90% {
+    left: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.mainpro {
+  margin-top: 20px;
+  margin-left: 190px;
+  margin-bottom: 100px;
+  right: 0px;
+  justify-items: center;
+  border: 4px solid black;
+  margin-right: 600px;
+}
+
+.covpro {
+  left: 0px;
+  right: 0px;
+  top: 400px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.covpro h2 {
+  left: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.item div {
+  left: 0%;
+  display: inline-block;
+  bottom: 45px;
+}
+
+.singleitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 12px;
+  background-color: rgb(241, 240, 248);
+  /* height: 345px; */
+  padding: 10px;
+
+  box-shadow: -5px 7px 11px -6px rgba(0, 0, 0, 0.75);
+  bottom: 0px;
+}
+
+.singleitem h3 {
+  margin-top: 2%;
+  margin-left: 8px;
+  height: 6px;
+}
+
+.singleitem img {
+  width: 200px;
+  height: 105px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.singleitem:hover {
+  margin-left: 25px;
+  width: 210px;
+  height: 265px;
+}
+
+.singleitem h4 {
+  position: relative;
+  text-align: justify;
+  margin: 2%;
+  font-size: medium;
+  color: rgb(108, 93, 247);
+}
+
+.singleitem button {
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 150px;
+  height: auto;
+  border: 2px solid steelblue;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(241, 115, 56);
+  background-color: rgb(217, 215, 247);
+  text-align: center;
+  /* transform: translate(20%, 10%); */
+  /* font-weight: bold; */
+}
+
+.singleitem button:hover {
+  background-color: rgb(250, 234, 230);
+  border: 1px solid;
+  border-color: rgb(0, 255, 76);
+}
+
+.diabeticpro {
+  left: 0%;
+  margin-bottom: 7px;
+  margin-top: 30px;
+  right: 0%;
+}
+
+.diabeticpro h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.foot {
+  position: fixed;
+  margin-top: 20px;
+  bottom: 0%;
+  width: 100%;
+  padding-top: 10px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
